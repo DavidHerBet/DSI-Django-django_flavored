@@ -1,12 +1,8 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+{% extends "base.html" %}
 
-<head>
-  <title>my_app - home</title>
-</head>
+{% block title %} My app - Home {% endblock %}
 
-<body>
-  <h1>Sample App</h1>
-  <p>Home de my_app</p>
-</body>
-
-</html>
+{% block content %}
+  <h1> Home page </h1>
+  <p> Bienvenidos a la pagina home de my_app </p>
+{% endblock %}
