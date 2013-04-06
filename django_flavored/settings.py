@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/alu4078/casa/django_flavored/database/sqlite3.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/home/alu4078/casa/proyectos-django/django_flavored/database/sqlite3.db',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
         'PASSWORD': '',
@@ -111,6 +111,8 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    '/home/alu4078/casa/proyectos-django/django_flavored/templates',
+    '/home/alu4078/casa/proyectos-django/django_flavored/my_app/templates',
 )
 
 INSTALLED_APPS = (
