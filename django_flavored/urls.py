@@ -15,5 +15,5 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
     url(r'^my_app/', include('my_app.urls')),
-    url(r'^$', 'donothing.views.index'),
+    url(r'^$', 'django_flavored.views.base'),
 )
