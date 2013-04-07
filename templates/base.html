@@ -5,7 +5,11 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="estilos.css" />
+    
+    {% block styles %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}" />
+    {% endblock %}
     <title>{% block title %}Bienvenidos a django_flavored{% endblock %}</title>
 </head>
 

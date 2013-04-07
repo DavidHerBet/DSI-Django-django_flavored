@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block styles %}
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'my_app/estilos.css' %}" />
+{% endblock %}
+
 {% block title %} My app - About{% endblock %}
 
 {% block content %}
